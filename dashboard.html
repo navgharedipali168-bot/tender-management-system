@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Bidder Dashboard | BIDEXAA</title><link rel="stylesheet" href="assets/style.css"></head>
+<body class="dashboard-body">
+<header class="topbar"><div class="brand"><span class="brand-mark">B</span><div><strong>BIDEXAA</strong><small>Bidder Workspace</small></div></div><nav><a class="active" href="dashboard.html">Dashboard</a><a href="index.html">Home</a><button id="logoutBtn" class="btn btn-light small">Logout</button></nav></header>
+<main class="dash">
+<div class="welcome"><div><span class="eyebrow">BIDDER WORKSPACE</span><h1 id="welcomeName">Welcome</h1><p>Manage your account and continue to the bidder profile verification stage.</p></div><div class="id-box"><small>YOUR BIDDER ID</small><strong id="bidderId">—</strong></div></div>
+<div class="stats"><div><span>Account status</span><strong class="status">Registered</strong></div><div><span>Authentication</span><strong>Active</strong></div><div><span>Profile stage</span><strong>Pending verification</strong></div></div>
+<section class="dash-grid"><article class="panel"><div class="panel-head"><div><span class="eyebrow">ACCOUNT</span><h2>Registration details</h2></div><span class="pill">Member 3</span></div><div class="details"><div><small>Full name</small><strong id="dName">—</strong></div><div><small>Email</small><strong id="dEmail">—</strong></div><div><small>Mobile</small><strong id="dMobile">—</strong></div><div><small>Registered</small><strong id="dDate">—</strong></div></div></article>
+<article class="panel next-panel"><span class="eyebrow">NEXT MODULE</span><h2>Complete bidder profile</h2><p>Your account is ready. Member 4 can now connect PAN, GST, UDYAM and business verification to this Bidder ID.</p><div class="next-flow"><span>Account ✓</span><span>→</span><span>Profile verification</span></div><div class="disabled-note">Profile verification will be handled by Member 4.</div></article></section>
+</main>
+<footer>© 2026 BIDEXAA • Authenticated bidder workspace</footer>
+<script src="assets/app.js"></script><script>protectPage();loadDashboard();document.getElementById("logoutBtn").addEventListener("click",logoutBidder);</script>
+</body></html>

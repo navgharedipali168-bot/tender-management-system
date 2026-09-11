@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Register | BIDEXAA</title><link rel="stylesheet" href="assets/style.css"></head>
+<body class="auth-body">
+<header class="topbar"><div class="brand"><span class="brand-mark">B</span><div><strong>BIDEXAA</strong><small>Digital Tender Platform</small></div></div><nav><a href="index.html">Home</a><a href="login.html">Login</a></nav></header>
+<main class="auth-wrap">
+<section class="auth-info"><span class="eyebrow">NEW BIDDER</span><h1>Create your BIDEXAA account</h1><p>Register your basic account details. Your Bidder ID will be generated automatically after successful registration.</p><div class="mini-list"><div>✓ Unique Bidder ID</div><div>✓ Email & mobile validation</div><div>✓ Password protected account</div><div>✓ Ready for Member 4 profile verification</div></div></section>
+<section class="form-card"><div class="form-head"><span>01 / ACCOUNT REGISTRATION</span><h2>Bidder signup</h2><p>All fields marked * are required.</p></div>
+<form id="registerForm" novalidate>
+<div class="grid2"><label>Full name *<input id="fullName" type="text" placeholder="Enter full name" autocomplete="name" required></label><label>Mobile number *<input id="mobile" type="tel" placeholder="10-digit mobile number" maxlength="10" required></label></div>
+<label>Email address *<input id="email" type="email" placeholder="name@company.com" autocomplete="email" required></label>
+<label>Password *<div class="password-wrap"><input id="password" type="password" placeholder="Minimum 8 characters" autocomplete="new-password" required><button type="button" class="eye" data-target="password">Show</button></div></label>
+<label>Confirm password *<div class="password-wrap"><input id="confirmPassword" type="password" placeholder="Re-enter password" autocomplete="new-password" required><button type="button" class="eye" data-target="confirmPassword">Show</button></div></label>
+<label class="check"><input id="terms" type="checkbox"> <span>I agree to the bidder registration terms and confirm that the information provided is accurate.</span></label>
+<div id="registerMsg" class="message"></div>
+<button class="btn btn-primary full" type="submit">Create bidder account</button>
+<p class="switch">Already registered? <a href="login.html">Login here</a></p>
+</form></section>
+</main>
+<footer>© 2026 BIDEXAA • Member 3 — Registration & Authentication</footer>
+<script src="assets/app.js"></script>
+<script>
+document.querySelectorAll(".eye").forEach(btn=>btn.addEventListener("click",()=>{const el=document.getElementById(btn.dataset.target);el.type=el.type==="password"?"text":"password";btn.textContent=el.type==="password"?"Show":"Hide";}));
+document.getElementById("registerForm").addEventListener("submit", registerBidder);
+</script>
+</body></html>
